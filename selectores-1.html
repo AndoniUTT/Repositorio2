@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Basicos y Combinadores</title>
+    <style>
+        /*
+        Estructura CSS
+        selector { 
+            propiedad: valor
+        }
+        */
+        /* Seleector etiqueta */
+
+        h1,p, div{
+            background-color: aqua;
+            color: indianred;
+        }
+        body{
+            background-color: lightcyan;
+        }
+        .cuadro {
+            display: line-block;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(105, 219, 185);
+        }
+        #circulo{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            background-color: rgb(215, 105, 219);
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Este Titulo</h1>
+    <p>Parrafo</p>
+    <p>Parrafo</p>
+    <p>Parrafo</p>
+    <div class="cuadro">Este Div</div>
+    <div id="circulo">Este Div</div>
+    <div class="cuadro">Este Div</div>
+    <div>Este Div</div>
+    <div class="cuadro">Este Div</div>
+</body>
+</html>
