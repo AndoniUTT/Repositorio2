@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Selectores CSS combinadores</title>
+    <style>
+        /* Selector Universal */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Selectores Descendientes */
+        #descendiente p{
+            color: lime;
+        }
+        p {
+            color: violet;
+        }
+
+        #hijo > p {
+            background-color: aqua;
+        }
+        #adyacente + p {
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <div id="descendiente">
+        <p>Texto</p>
+        <p>Texto</p>
+        <p>Texto</p>
+    </div>
+    <div id="hijo">
+        <p>Hijo</p>
+        <p>Hijo</p>
+        <p>Hijo</p>
+    </div>
+    <div id="adyacente">
+        <p>Texto</p>
+        <p>Texto</p>
+        <p>Texto</p>
+    </div>
+    <p>Este está juntito</p>
+    <p>Este está un poco separado</p>
+</body>
+</html>
