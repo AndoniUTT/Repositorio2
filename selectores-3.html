@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClases y PseudoElementos</title>
+    <style>
+        div{
+            background-color: rgb(209, 209, 178);
+            color: rgb(39, 17, 136);
+        }
+        /*
+        PseudoClases(:)
+        */
+        div:hover{
+            background-color: blueviolet;
+            color: rgb(23, 150, 150);
+        }
+        input:focus{
+            background-color: red;
+            color: white;
+        }
+        input:required{
+            background-color: cyan;
+            color: white;
+        }
+        /*PseudoElementos (::)*/
+
+        .cuadro{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            float: left;
+            border: 1px solid green;
+        }
+        .cuadro:first-child{
+            background-color: papayawhip;
+        }
+        .cuadro:last-child{
+            background-color: orange;
+        }
+        .cuadro:nth-child(odd){
+            background-color: lightcyan;
+        }
+        p::first-letter{
+            color: violet;
+        }
+        p::after{
+            content: '😎';
+        }
+    </style>
+</head>
+<body>
+    <div>Este es div</div>
+    <input type="text" name="" id="">
+    <div>Este es div, coloca tu nombre</div>
+    <input type="text" name="" id="" required>
+    <div>Este es div, coloca tu apellido</div>
+    <input type="text" name="" id="">
+    <div class="container">
+        <div class="cuadro">Este es un div para PseudoElemntos 1</div>
+        <div class="cuadro">Este es un div para PseudoElemntos 2</div>
+        <div class="cuadro">Este es un div para PseudoElemntos 3</div>
+        <div class="cuadro">Este es un div para PseudoElemntos 4</div>
+    </div>
+    <div>
+    <p>Parrafo</p>
+    <p>Parrafo</p>
+    <p>Parrafo</p>
+    </div>
+</body>
+</html>
